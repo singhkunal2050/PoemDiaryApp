@@ -22,6 +22,8 @@
     <platform name="android">
         <allow-intent href="market:*" />
 	</platform>
+
+    <preference name="android-minSdkVersion" value="17" />
     
     <platform name="ios">
         <allow-intent href="itms:*" />
