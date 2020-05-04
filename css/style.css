@@ -172,7 +172,7 @@ a{
 
 
 #content-grid{
-    background: linear-gradient(10deg,#faadad85,#f1f1b077); 
+    background: rgba(241, 241, 176, 0.467); 
     transition: ease .5s;
     min-height: 100vh;
     /* border: 5px solid goldenrod; */
