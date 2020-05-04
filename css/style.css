@@ -225,6 +225,12 @@ a{
 }
 
 
+.link{
+    font-size: 0.8em;
+    padding: 5px 0;
+}
+
+
 /* footer  */
 
 #footer{
@@ -260,6 +266,11 @@ a{
         margin-top:95px ;
     }
 
+    .link{
+        font-size: .7em;
+        padding: 5px 0;
+    }
+    
 }
 
 @media(max-width:570px){
@@ -300,10 +311,6 @@ a{
         margin-top:130px ;
     }
     
-    .link{
-        font-size: .7em;
-        padding: 5px 0;
-    }
 }
 
 @media(max-width:320px){
