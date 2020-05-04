@@ -1,0 +1,341 @@
+/* declaring variables */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Berkshire+Swash);
+
+:root{
+    --primary-col:#ffe3ac;
+    --second-col:#161116;
+    --ter-col:#722e72;
+}
+
+
+/* resetting */
+
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0;
+    margin: 0;
+    color:var(--primary-col)
+}
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* lightbox  */
+
+#lightbox {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+}
+  
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  #lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    padding: 4px;
+    background-color: black;
+    border: 2px solid white;
+}
+
+
+/* navbar */
+
+#navbar{
+    /* border: var(--primary-col) 2px solid; */
+    background: var(--second-col);
+    height: 90px;
+    text-align: center;
+    position: fixed;
+    left:0;
+    top:0;
+    right: 0;
+    border-bottom:var(--primary-col) 1px solid;
+    z-index: 2;
+}
+
+/* logo  */
+
+#logo{
+    height: 40px;
+}
+
+#navbar h2 a {
+    font-size: 1.4em;
+    color:var(--primary-col);
+    text-decoration: underline;
+    font-family: 'Berkshire Swash', cursive;
+    font-weight: 100;
+    /* border: .1px salmon solid; */
+    padding: 15px;
+}
+
+#navbar h2 {
+    margin-right: auto;
+}
+
+#navbar ul{
+    padding: 20px;
+    /* border: var(--primary-col) 2px solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#navbar li a:hover{
+    border: #220c22 1px solid;
+    background-color:var(--primary-col);
+    color: var(--second-col);
+    transition: .5s ease;
+}
+
+/* search bar  */
+
+#navbar #myInput{
+    padding: 10px;
+    width: 40%;
+    color: black;
+    font-size: 1em;
+    border-radius: 24px;
+}
+
+
+/* main  */
+
+#main{
+    background-image: url('img/music.png');
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    margin-top: 92px;
+    height: 100%;
+    transition: .5s ease-in-out;
+}
+
+/* main of add poem  */
+
+#addpoemmain{
+    border: 2px solid aqua;
+    background: palevioletred;
+    margin-top: 91px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#addpoemmain *{
+    color: rgb(24, 20, 17);
+}
+
+.upload{
+    margin: 10px;
+    border: 2px solid aquamarine;
+    height: 400px;
+    text-align: center;
+}
+
+.upload h2{
+    padding: 20px;
+}
+
+.upload input[type="file"]{
+    margin: 20px 120px;
+}
+
+.upload input[type="button"]{
+    width: 150px;
+    padding: 5px 10px;
+}
+
+/* content grid  */
+
+
+#content-grid{
+    background-image: linear-gradient(10deg,#faadad85,#f1f1b077); 
+    transition: ease .5s;
+    min-height: 100vh;
+    /* border: 5px solid goldenrod; */
+}
+
+
+#tiles{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap ;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid goldenrod; */
+}
+
+.tile{
+    background: azure;
+    border: 2px rgb(24, 20, 17) solid;
+    padding: 8px;
+    margin: 20px 10px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 5px 5px 20px rgb(255, 146, 57);
+    z-index: 0;
+    transition: ease .5s;
+}
+
+.tile:hover{
+    transform: scale(1.1);
+    transition: ease .5s;
+}
+
+.tile #img{
+    height: 150px;
+    width: 250px;
+}
+
+.tile h2 a{
+    display: block;
+    background: #000000;
+    border: 1px rgb(52, 32, 68) solid;
+}
+
+.tile h2 a:hover{
+    background: #ffb120;
+    color:rgb(30, 6, 49);
+    border: 1px solid gold;
+    transition: ease .4s;
+}
+
+
+/* footer  */
+
+#footer{
+    background: var(--second-col);
+    padding: 40px;
+}
+
+
+
+/*----------------------------------- media----------------------------------  */
+
+
+
+@media(max-width:630px){
+    #navbar{
+        height: 95px;
+    }
+
+    #navbar h2{
+        font-size: 1.2em;
+    }
+
+    #navbar ul li a{
+        font-size: 0.9em;
+    }
+
+    #navbar #myInput{
+        padding: 5px;
+        width: 42%;
+    }
+     
+    #main{
+        margin-top:95px ;
+    }
+
+}
+
+@media(max-width:570px){
+    #navbar{
+        height: 130px;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        padding: 0px 0;
+    }
+
+    #navbar ul h2{
+        display: block;
+        margin: 10px 10px;
+    }
+
+    #navbar ul #logolink {
+        /* border: salmon 1px solid; */
+        padding: 10px;
+        margin: 15px;
+    }
+
+    #navbar #myInput{
+        width: 90%;
+
+    }
+    .tile #img{
+        height: 150px;
+    }
+
+    .tile:hover{
+        transform: scale(1.1);
+        transition: ease .5s;
+    } 
+
+    #main{
+        margin-top:130px ;
+    }
+}
+
+@media(max-width:320px){
+    
+    .tile{
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .tile #img{
+        max-width: inherit;
+    }
+
+    
+    .tile:hover{
+        transform: scale(0.95);
+        transition: ease .5s;
+    } 
+}
+
+
+@media(max-width:260px){
+    #logo{
+        display: none;
+    }
+
+    #navbar{
+        height: 100px;
+    }
+
+    #main{
+        margin-top: 100px;
+    }
+
+    #footer{
+        padding: 40px 10px;
+    }
+
+
+}

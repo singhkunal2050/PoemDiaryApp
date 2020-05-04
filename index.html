@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="shortcut icon" type="image/png" href="img/poetry.png" >
+    <link rel="stylesheet" href="./lib/view-bigimg.css">
+    <script src="./js/search.js"></script>
+    <script src="./lib/view-bigimg.js"></script>
+    <title>PoemDiary</title>
+</head>
+<body>
+    <header>
+        <section id="navbar">
+            <ul>
+                <h2>
+                    <a href="" id="logolink">
+                        <img id= "logo" src="img/poetry.png"alt="logo">PoemDiary
+                    </a>
+                </h2>
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for poems.." autofocus>
+            </ul>
+        </section>
+    </header>
+
+    <main id="main">
+        <section id="content-grid">
+            <div id="tiles">
+                <div class="tile" id="Akash pagaruni">
+                    <img src="img/poems/Akash_pagaruni.jpg" alt="" id="img">
+                    <h2><a class="link" >Akash pagaruni</a></h2>
+                </div>
+                <div class="tile" id="jewanat hi ghadi">
+                    <img src="img/poems/jewanat_hi_ghadi_ashich_rahudd.jpg" alt="" id="img">
+                    <h2><a class="link" >jewanat hi ghadi</a></h2>
+                </div>
+                <div class="tile" id="kewha tari pahate">
+                    <img src="img/poems/kewha_tari_pahate.jpg" alt="" id="img">
+                    <h2><a class="link" >kewha tari pahate</a></h2>
+                </div>
+                <div class="tile" id="majhe man tujhe zale">
+                    <img src="img/poems/majhe_man_tujhe_zale.jpg" alt="" id="img">
+                    <h2><a class="link" >majhe man tujhe zale</a></h2>
+                </div>
+                <div class="tile" id="man lobhale re mana">
+                    <img src="img/poems/man_lobhale_re_mana.jpg" alt="" id="img">
+                    <h2><a class="link" >man lobhale re mana</a></h2>
+                </div>
+                <div class="tile" id="mi manat hasata prit">
+                    <img src="img/poems/mi_manat_hasata_prit_hase.jpg" alt="" id="img">
+                    <h2><a class="link" >mi manat hasata prit</a></h2>
+                </div>
+                <div class="tile" id="opts purata pasa">
+                    <img src="img/poems/opts_purata_pasa_pahije.jpg" alt="" id="img">
+                    <h2><a class="link" >opts purata pasa</a></h2>
+                </div>
+                <div class="tile" id="reshamachya reghani">
+                    <img src="img/poems/reshamachya_reghani.jpg" alt="" id="img">
+                    <h2><a class="link" >reshamachya reghani</a></h2>
+                </div>
+                <div class="tile" id="shukra tara mand vara">
+                    <img src="img/poems/shukra_tara_mand_vara.jpg" alt="" id="img">
+                    <h2><a class="link" >shukra tara mand vara</a></h2>
+                </div>
+                <div class="tile" id ="taraya mama ho taraya">
+                    <img src="img/poems/taraya_mama_ho_taraya_mama.jpg" alt="" id="img">
+                    <h2><a class="link" >taraya mama ho taraya</a></h2>
+                </div>
+                <div class="tile" id="tula pahate re_tula">
+                    <img src="img/poems/tula_pahate_re_tula.jpg" alt="" id="img">
+                    <h2><a class="link" >tula pahate re tula</a></h2>
+                </div>
+                <div class="tile" id="alladin2">
+                    <img src="img/alladin.jpg" alt="" id="img">
+                    <h2><a class="link" >Alladin2</a></h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="footer">
+            <ul>
+                <li>PoemDiary</li>
+                <li>Design:<a href="https://singhkunal2050.netlify.com/" style="text-decoration: underline;">singhkunal2050 &copy;</a></li>
+            </ul>
+        </section>
+    </footer>
+    <script>
+        var viewer = new ViewBigimg()
+    
+        var wrap = document.getElementById('tiles')
+        // console.log(viewer)
+        wrap.onclick = function (e) {
+          if (e.target.nodeName === 'IMG') {
+            // viewer.show(e.target.src.replace('.jpg', '-big.jpg'))
+            viewer.show(e.target.src)
+          }
+        }
+    </script>
+</body>
+</html>
