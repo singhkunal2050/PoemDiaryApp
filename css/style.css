@@ -190,6 +190,7 @@ a{
 }
 
 .tile{
+    font-size: .8em;
     background: azure;
     border: 2px rgb(24, 20, 17) solid;
     padding: 8px;
@@ -223,7 +224,6 @@ a{
     border: 1px solid gold;
     transition: ease .4s;
 }
-
 
 .link{
     font-size: 0.8em;
@@ -270,7 +270,7 @@ a{
         font-size: .7em;
         padding: 5px 0;
     }
-    
+
 }
 
 @media(max-width:570px){
@@ -310,7 +310,6 @@ a{
     #main{
         margin-top:130px ;
     }
-    
 }
 
 @media(max-width:320px){
