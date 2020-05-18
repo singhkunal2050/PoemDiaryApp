@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="PoemDiaryPaidApp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>PoemDiary</name>
+    <name>PoemDiary©</name>
     
     <description>
         An Archive of Handwritten poems by Aruna Jogaikar.
@@ -30,7 +30,7 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     
-    <icon src="img/poetry.png" />
+    <icon src="img/poetryappicon.png" />
     
     <!-- FOR SPLASH SCREEN 3secs -->
 
