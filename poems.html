@@ -1665,8 +1665,8 @@
         // console.log(viewer)
         wrap.onclick = function (e) {
           if (e.target.nodeName === 'IMG') {
-            // viewer.show(e.target.src.replace('.jpg', '-big.jpg'))
-            viewer.show(e.target.src)
+            viewer.show(e.target.src.replace('.jpg', '-big.jpg'))
+//             viewer.show(e.target.src)
             inp.value = "";
             myFunction();
         }
