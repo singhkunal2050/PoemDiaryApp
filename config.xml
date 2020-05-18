@@ -30,7 +30,7 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     
-    <icon src="img/poetryappicon.png" />
+    <icon src="img/poetry.png" />
     
     <!-- FOR SPLASH SCREEN 3secs -->
 
